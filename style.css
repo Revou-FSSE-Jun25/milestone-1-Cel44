@@ -14,7 +14,7 @@ header{
 }
 
 nav a{
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 
 nav a:hover{
@@ -25,11 +25,18 @@ nav a:active{
     color:blue;
 }
 
+/* BODY starts here */
+
+body {
+    background-color: rgb(29, 25, 25);
+}
+
 /* PROFILE starts here */
 
 h1{
     margin-left: 5vw;
     font-family: "Huninn";
+    color: rgb(239, 195, 229);
 }
 
 .profile-introduction{
@@ -48,17 +55,24 @@ h1{
     min-width: 50px;
     min-height: auto;
     margin-left: -3vw;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid rgb(236, 216, 232);
+    float: left;
+    margin-right: 1vw;
 }
 
 .profile-description {
     font-size: large;
     font-family: 'Mulish';
+    color: rgb(239, 195, 229);
 }
 
 /* ABOUT ME starts here */
 
 .about-me h3{
     margin-left: 8vw;
+    color: rgb(239, 195, 229);
     line-height: 1.5;
 }
 
@@ -66,6 +80,7 @@ h1{
 
 .projects h3{
     margin-left: 10vw;
+    color: rgb(239, 195, 229);
 }
 
 /* MESSAGE starts here */
