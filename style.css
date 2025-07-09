@@ -1,0 +1,78 @@
+/* HEADER BANNER starts here */
+
+header{
+    background-color: rgb(125, 84, 120);
+    padding: 0 1vw 2vw 1vw;
+}
+
+#navigation-bar{
+    display: flex;
+    justify-content: right;
+    gap: 3vw;
+    font-size: 12px;
+    font-family:'Lucida Console', 'sans-serif';
+}
+
+nav a{
+    color: rgb(0, 0, 0);
+}
+
+nav a:hover{
+    color:red
+}
+
+nav a:active{
+    color:blue;
+}
+
+/* PROFILE starts here */
+
+h1{
+    margin-left: 5vw;
+    font-family: "Huninn";
+}
+
+.profile-introduction{
+    margin-top: 2vw;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    margin-left: 8vw;
+}
+
+.profile img {
+    width: auto;
+    height: 20vw;
+    min-width: 50px;
+    min-height: auto;
+    margin-left: -3vw;
+}
+
+.profile-description {
+    font-size: large;
+    font-family: 'Mulish';
+}
+
+/* ABOUT ME starts here */
+
+.about-me h3{
+    margin-left: 8vw;
+    line-height: 1.5;
+}
+
+/* PROJECTS starts here */
+
+.projects h3{
+    margin-left: 10vw;
+}
+
+/* MESSAGE starts here */
+
+
+fieldset{
+    width: 30%;
+    height: auto;
+    margin-left: 8vw;
+}
