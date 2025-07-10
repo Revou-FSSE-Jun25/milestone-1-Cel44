@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Huninn&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&sectionplay=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Huninn&family=Mulish:ital,wght@0,200..1000;1,200..1000&sectionplay=swap" rel="stylesheet">
     <title>Portfolio</title>
 </head>
 
@@ -24,69 +24,82 @@
 
     <!-- Profile starts here -->
 
-    <div id="profile-section" class="profile-introduction">
-        <h1>Hi, I'm Celine!</h1>
-    </div>
+    <main>
+        <section id="profile-section" class="profile-introduction">
+            <h1>Hi, I'm Celine!</h1>
+        </section>
 
-    <div class="profile">
-        <figure>
-            <img src="Assets/profile_pic.jpg" alt="Profile Pic"/>
-        </figure>
+        <section class="profile">
+            <figure>
+                <img src="Assets/profile_pic.jpg" alt="Profile Pic"/>
+            </figure>
 
-        <h2 class="profile-description">
-            I am a web developer based in Indonesia<br>
-            and I like designing websites!<br><br>
-            READ BELOW FOR MORE INFO!
-        </h2>
-    </div>
+            <h2 class="profile-description">
+                I am a web developer based in Indonesia<br>
+                and I like designing websites!<br><br>
+                READ BELOW FOR MORE INFO!
+            </h2>
+        </section>
 
-    <br><br><br> <!-- About me Section -->
+        <br><br><br> <!-- About me Section -->
 
-    <div id="about-section" class="about-me">
-        <h1> ABOUT ME</h1>
-        <h3>
-            I am a software engineer studied in REVOU<br>
-            Ever since I started in REVOU, I have dealt in a lot of projects<br>
-            Most importantly, making websites is enjoyable to me<br>
-            Making them fun and pretty is my goal
-        </h3>
-    </div>
+        <section id="about-section" class="about-me">
+            <h1> ABOUT ME</h1>
+            <p>
+                I am a software engineer stusectiond in REVOU<br>
+                Ever since I started in REVOU, I have dealt in a lot of projects<br>
+                Most importantly, making websites is enjoyable to me<br>
+                Making them fun and pretty is my goal
+            </p>
+        </section>
 
-    <br><br><br> <!-- Projects Section -->
+        <br><br><br> <!-- Projects Section -->
 
-    <div id="project-section" class="projects">
-        <h1> PROJECTS </h1>
-        <br>
-        <h3> Project 1: </h3>
-        <h3> Project 2: </h3>
-        <h3> Project 3: </h3>
-    </div>
-
-    <br><br><br> <!-- Message Section -->
-
-    <div id="message-section" class="message-me">
-        <h1>MESSAGE ME</h1>
-        <fieldset>
-            <legend>Profile</legend>
-            
-            <label id="input-name" for="input-name">Name: </label>
-            <input type="text" id="input-name" name="name" placeholder="Your Full Name" required/>
-            <br><br>
-
-            <label id="input-email" for="input-email">Email: </label>
-            <input type="email" id="input-email" name="email" placeholder="12345@gmail.com" required/>
-            <br><br>
-
-            <label id="input-message" for="input-message">Message: </label><br>
-            <textarea placeholder="Leave your message here"></textarea>
-
+        <section id="project-section" class="projects">
+            <h1> PROJECTS </h1>
             <br>
-            <br>
+            <h3> Project 1: </h3>
+            <h3> Project 2: </h3>
+            <h3> Project 3: </h3>
+        </section>
 
-            <button type="submit">Submit</button>
-        </fieldset>
-    </div>
+        <br><br><br> <!-- Message Section -->
 
+        <section id="message-section" class="message-me">
+            <h1>MESSAGE ME</h1>
+            <form>
+                <fieldset>
+                    <legend>Profile</legend>
+                    
+                    <label id="input-name" for="input-name">Name: </label>
+                    <input type="text" id="input-name" name="name" placeholder="Your Full Name" required/>
+                    <br><br>
+
+                    <label id="input-email" for="input-email">Email: </label>
+                    <input type="email" id="input-email" name="email" placeholder="12345@gmail.com" required/>
+                    <br><br>
+
+                    <label id="input-message" for="input-message">Message: </label><br>
+                    <textarea placeholder="Leave your message here"></textarea>
+
+                    <br>
+                    <br>
+
+                    <button type="submit">Submit</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
 </body>
+
+<footer>
+     <section class="contact">
+        <p>Contact Us Directly!</p>
+        <section class="contact-details">
+            <img src="Assets/whatsapp_icon.jpg" alt="whatsapp_icon" class="whatsapp_icon">
+            <p>xxxx-xxxx-xxxx</p>
+        </section>
+     </section>
+</footer>
 
 </html>
