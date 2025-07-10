@@ -2,7 +2,7 @@
 
 header{
     background-color: rgb(125, 84, 120);
-    padding: 0 1vw 2vw 1vw;
+    padding: 1.5vw 1vw 1.5vw 1vw;
 }
 
 #navigation-bar{
@@ -70,7 +70,7 @@ h1{
 
 /* ABOUT ME starts here */
 
-.about-me h3{
+.about-me p{
     margin-left: 8vw;
     color: rgb(239, 195, 229);
     line-height: 1.5;
@@ -90,4 +90,30 @@ fieldset{
     width: 30%;
     height: auto;
     margin-left: 8vw;
+}
+
+/* Footer starts here */
+
+.contact{
+    background-color: rgb(88, 59, 73);
+    text-align: right;
+    margin: 1vw 0 1vw 0;
+}
+
+.contact p{
+    margin: 0px;
+    margin-right: 1vw;
+    color: rgb(209, 198, 208);
+    font-size: medium;
+}
+
+.contact-details{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.whatsapp_icon{
+    height: 1em;
 }
