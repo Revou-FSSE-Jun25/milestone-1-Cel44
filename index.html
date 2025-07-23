@@ -3,94 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&sectionplay=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Huninn&family=Mulish:ital,wght@0,200..1000;1,200..1000&sectionplay=swap" rel="stylesheet">
-    <title>Portfolio</title>
 </head>
 
 <body>
 
-    <!-- this is top logo and navigation -->
+<!-------------------------------- NAVIGATION stars here ---------------------------------->
 
     <header>
-        <nav id="navigation-bar">
-            <a href ="#profile-section">Home</a>
+        <nav class="navigation-bar">
+            <a href ="#home-section">Home</a>
             <a href ="#project-section">Projects</a>
-            <a href ="#about-section">About Us</a>
+            <a href ="#about-section">About Me</a>
             <a href ="#message-section">Message Me</a>
         </nav>
     </header>
 
-    <!-- Profile starts here -->
+    <section id="home-section" class="hero">
+        <div class="hero-content">
+            <h1>Dream, Design, Make Real</h1>
+            <p>Turning your dream into reality </p>
+        </div>
+    </section>
 
-    <main>
-        <section id="profile-section" class="profile-introduction">
-            <h1>Hi, I'm Celine!</h1>
-        </section>
+<!-------------------------------- ABOUT stars here ---------------------------------->
 
-        <section class="profile">
-            <figure>
-                <img src="Assets/profile_pic.jpg" alt="Profile Pic"/>
-            </figure>
+    <section id="about-section" class="about">
+        <h1>ABOUT ME</h1>
 
-            <h2 class="profile-description">
-                I am a web developer based in Indonesia<br>
-                and I like designing websites!<br><br>
-                READ BELOW FOR MORE INFO!
-            </h2>
-        </section>
+        <div class="about-container">
+            <div class="about-image">
+                <img src="Assets/About-Pic.jpg" alt="Picture of choosing a design">
+            </div>
+            <div class="about-text">
+                <p>Help you make websites for people to discover<br>
+                your business, products, and services</p>
+                
+                <div class="detail-container">
+                    <div class="detail-item">
+                        <h3>Education</h3>
+                        <ul>Revou</ul>
+                    </div>
+                    <div class="detail-item">
+                        <h3>Services</h3>
+                        <ul>
+                            <li>Design</li>
+                            <li>Consult</li>
+                            <li>Create</li>
+                        </ul>
+                </div>
+        </div>
+    </section>
 
-        <br><br><br> <!-- About me Section -->
+<!-------------------------------- PROJECT stars here ---------------------------------->
 
-        <section id="about-section" class="about-me">
-            <h1> ABOUT ME</h1>
-            <p>
-                I am a software engineer stusectiond in REVOU<br>
-                Ever since I started in REVOU, I have dealt in a lot of projects<br>
-                Most importantly, making websites is enjoyable to me<br>
-                Making them fun and pretty is my goal
-            </p>
-        </section>
 
-        <br><br><br> <!-- Projects Section -->
+    <section id="project-section" class="project">
+        <h1>PROJECTS</h1>
+            <div class="boards">
+                <div class="project-board1">
+                    <img src="Assets/Project_1.jpg" alt="Picture of a project">
+                    <h3>Project 1</h3>
+                    <p>Description for Project 1</p>
+                </div>
 
-        <section id="project-section" class="projects">
-            <h1> PROJECTS </h1>
-            <br>
-            <h3> Project 1: </h3>
-            <h3> Project 2: </h3>
-            <h3> Project 3: </h3>
-        </section>
+                <div class="project-board2">
+                    <img src="Assets/Project_2.jpg" alt="Picture of a project">
+                    <h3>Project 2</h3>
+                    <p>Description for Project 2</p>
+                </div>
 
-        <br><br><br> <!-- Message Section -->
+                <div class="project-board3">
+                    <img src="Assets/Project_3.jpg" alt="Picture of a project">
+                    <h3>Project 3</h3>
+                    <p>Description for Project 3</p>
+                </div>
+            </div>
+    </section>
 
-        <section id="message-section" class="message-me">
-            <h1>MESSAGE ME</h1>
-            <form>
-                <fieldset>
-                    <legend>Profile</legend>
+<!-------------------------------- MESSAGE stars here ---------------------------------->
+
+    <section id="message-section" class="message-me">
+        <h1>Send me a message!</h1>
+        <form>
+            <fieldset>
+                <legend>Profile</legend>
                     
-                    <label id="input-name" for="input-name">Name: </label>
-                    <input type="text" id="input-name" name="name" placeholder="Your Full Name" required/>
-                    <br><br>
+                <label id="input-name" for="input-name">Name: </label>
+                <input type="text" id="input-name" name="name" placeholder="Your Full Name" required/>
+                <br><br>
 
-                    <label id="input-email" for="input-email">Email: </label>
-                    <input type="email" id="input-email" name="email" placeholder="12345@gmail.com" required/>
-                    <br><br>
+                <label id="input-email" for="input-email">Email: </label>
+                <input type="email" id="input-email" name="email" placeholder="12345@gmail.com" required/>
+                <br><br>
 
-                    <label id="input-message" for="input-message">Message: </label><br>
-                    <textarea placeholder="Leave your message here"></textarea>
+                <label id="input-message" for="input-message">Message: </label><br>
+                <textarea placeholder="Leave your message here"></textarea>
 
-                    <br>
-                    <br>
+                <br>
+                <br>
 
-                    <button type="submit">Submit</button>
-                </fieldset>
-            </form>
-        </section>
-    </main>
+                <button type="submit">Submit</button>
+            </fieldset>
+        </form>
+    </section>
 </body>
+
+
+<!-------------------------------- FOOTER stars here ---------------------------------->
 
 <footer>
      <section class="contact">
