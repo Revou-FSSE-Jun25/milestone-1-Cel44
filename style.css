@@ -1,12 +1,19 @@
 *{
-    font-family: "huninn", sans-serif;
+    font-family: "montserrat", sans-serif;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 h1{
-    font-size: 2rem;
+    font-size: 2em;
     color: #f0f0f0;
+}
+
+@media (max-width: 420px){
+    h1{
+        font-size: 1em;
+    }
 }
 
 p{
@@ -17,14 +24,14 @@ p{
 /* --------------------- HEADER BANNER starts here ------------------------- */
 
 header{
-    padding: 1.5vw 1vw;
+    margin: 2rem;
     display: flex;
     justify-content: right;
 }
 
-#navigation-bar{
+.navigation-bar{
     gap: 3vw;
-    font-size: 12px;
+    font-size: 1em;
     font-family:'Lucida Console', 'sans-serif';
     font-weight: bold;
 }
@@ -41,10 +48,13 @@ nav a:active{
     color:blue;
 }
 
-@media (max-width: 768px) {
-  .navigation-bar {
-    display: none;
-  }
+@media (max-width: 420px) {
+    header{
+        margin: 1rem;
+    }
+    .navigation-bar{
+        font-size: 0.5em;
+    }
 }
 
 /*  BODY starts here */
@@ -59,9 +69,9 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 50vw;
+    height: 40vw;
     width: auto;
-    margin: 2em;
+    margin: 1em 2em 2em 2em;
     border-radius: 10px;
     background-image: url('Assets/Hero_background.jpg');
     background-size: cover;
@@ -81,10 +91,44 @@ body{
 }
 
 .hero-content h1{
+    font-size: 3em;
     margin-bottom: 0.5em;
 }
 
-@media (max-width:768px){
+.hero-content p{
+    font-size: 1.5em;
+}
+
+.message-button{
+    margin-top: 2em;
+    padding: 0.5em;
+    background-image: linear-gradient(45deg, rgb(142, 66, 186), black) ;
+    border-radius: 10px;
+    font-size: 1em;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width: 420px) {
+    .hero-content h1{
+        font-size: 1em;
+    }
+    
+    .hero-content p{
+        font-size: 0.7em;
+    }
+
+    .message-button{
+        font-size: 0.5em;
+    }
+
+}
+
+@media (min-width: 420px) and (max-width: 768px) {
+    .message-button{
+        font-size: 1em;
+    }
+
     .hero-content h1{
         font-size: 1.5em;
     }
@@ -106,7 +150,6 @@ body{
 .about h1{
     display: flex;
     justify-content: center;
-    font-size: 2vw;
     margin-bottom: 2vw;
 }
 
@@ -129,36 +172,107 @@ body{
 .about-text{
     flex: 1;
     flex-basis: 100%;
-    line-height: 1.5em;
+    line-height: 1.5;
 }
 
 .about-text p{
-    font-size: 1.5vw;
-    color: rgb(255, 255, 255);
-}
-
-.detail-container{
+    font-size: 2vw;
+    font-weight: 500;
     color: white;
 }
 
 .detail-item h3{
     margin-top: 2vw;
+    margin-bottom: 0.2em;
     color: rgb(142, 66, 186);
     font-size: 2vw;
+    position: relative;
+}
+
+.detail-item h3::after{
+    content: '';
+    background-color: rgb(200, 124, 244);
+    width: 2em;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
 }
 
 .detail-item ul{
     list-style-type: none;
     color: rgb(255, 255, 255);
-    font-size: 1em;
+    font-size: 1.5em;
 }
+
+@media (max-width: 420px){
+    .about{
+        padding: 1em;
+    }
+
+     .about h1{
+        padding-bottom: 0.5em;
+     }
+
+    .about-text{
+        line-height: 2;
+    }
+
+    .about-text h3{
+        font-size: 1em;
+        margin-bottom: 0.5em;
+    }
+
+    .about-image{
+        flex-basis: 40%
+    }
+
+    .about-text p{
+        font-size: 0.8em;
+    }
+
+    .detail-item ul{
+        font-size: 0.6em;
+    }
+
+    .detail-container{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: left;
+        gap: 2em;
+    }
+
+    .detail-item h3::after{
+        width: 1em;
+        height: 1px;
+    }
+}
+
+@media (min-width: 420px) and (max-width: 768px){
+    .about h1{
+        font-size: 1.5em;
+    }
+
+    .about-text p{
+        font-size: 1em;
+    }
+
+    .about-text h3{
+        font-size: 1em;
+    }
+
+    .detail-item ul{
+        font-size: 0.8em;
+    }
+}
+
 
 /* ------------------------------ Project stars here ---------------------------- */
 
 .project{
     margin: 5vh;
     padding: 2vw;
-    background-color: #363636;
+    background-color: #313131;
     border-radius: 10px;
 }
 
@@ -166,11 +280,14 @@ body{
     display: flex;
     justify-content: center;
     margin-bottom: 2vw;
-    font-size: 2vw;
 }
 
 .boards h3{
-    font-size: 1.5vw;
+    font-size: 1.5em;
+}
+
+.boards p{
+    font-size: 1em;
 }
 
 .boards img{
@@ -183,7 +300,7 @@ body{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .project-board1, .project-board2, .project-board3{
@@ -196,7 +313,7 @@ body{
     text-align: left;
 }
 
-@media (max-width: 768px){
+@media (max-width: 420px){
     .boards{
         flex-direction: column;
         align-items: center;
@@ -204,6 +321,38 @@ body{
 
     .project-board1, .project-board2, .project-board3{
         width: 50%
+    }
+
+    .boards h3{
+        font-size: 0.8em;
+    }
+
+    .boards p{
+        font-size: 0.5em;
+    }
+}
+
+@media (min-width: 420px) and (max-width: 768px){
+    .project h1{
+        font-size: 1.5em;
+    }
+
+    .boards{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-board1, .project-board2, .project-board3{
+        width: 50%;
+        margin: 1em; 
+    }
+
+    .boards h3{
+        font-size: 1.5em;
+    }
+
+    .boards p{
+        font-size: 1em;
     }
 }
 
@@ -221,21 +370,61 @@ body{
 }
 
 .message-me h1{
-    margin-bottom: 2vw;
-    font-size: 2vw;
+    margin-bottom: 3vw;
+    font-size: 2em;
+}
+
+form{
+    width: 60%;
 }
 
 fieldset{
-    width: 60vw;
-    height: auto;
-    margin-left: 8vw;
     padding: 2vw;
     color: white
 }
 
+input, textarea{
+    width: 100%;
+}
+
 legend{
     color: rgb(255, 255, 255);
-    font-size:calc(1.5vw + 10px);
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+@media (max-width: 420px){
+
+    .message-me h1{
+        font-size: 1em;
+    }
+    
+    fieldset{
+        margin-top: 1em;
+        width: 85%;
+    }
+    
+    fieldset legend{
+        font-size: 1em;
+    }
+
+    fieldset label{
+        font-size: 0.8em;
+    }
+}
+
+@media (min-width: 420px) and (max-width: 768px){
+    .message-me h1{
+        font-size: 1.5em;
+    }
+
+    form{
+        width: 60%;
+    }
+
+    .message-me legend{
+        font-size: 1.5em;
+    }
 }
 
 /* ------------------------------ FOOTER stars here ---------------------------- */
