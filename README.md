@@ -8,6 +8,16 @@ You can find
 * Message me - A form that you can fill to send me direct messages. Put your name and email so I know which one is your message
 * Contact Info - Another option on how you can contact me directly
 
+&nbsp;
+
+ # Contents
+ - [Web introduction](#hi-im-celine-👋)
+ - [Markdown contents](#contents)
+ - [Features](#features)
+ - [Tech and Tools](#tech-and-tools)
+ - [Link to the page](#link)
+
+ 
 
 &nbsp;
 
@@ -43,11 +53,14 @@ A very simple footer with only my contact information as it's content. This way 
 - Used "hero page" as the first thing to welcome people
 - Used "div" so that CSS can style different elements
 - Used "button" for a clickable button to navigate immediately to the form
+- Used fieldset, label, input, and textarea to make the form
 
  ### CSS
- - Used styling that is responsive to mobile and tab sized devices
- - Used flex to style for neater website
+ - Used styling sizes that is responsive not only to monitors but also to mobile and tab sized devices
+ - Used flex to style for neater layout
+ - used " ::after" to make colored underline-accent
  - Used media query to differentiate the style used between mobile and tab sized devices
+ - used ":hover" and ":active" to make responsive links
 
  &nbsp;
 
