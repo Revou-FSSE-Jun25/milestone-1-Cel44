@@ -224,27 +224,34 @@ body{
     }
 
     .about-image{
-        flex-basis: 40%
+        display: none;
     }
 
     .about-text p{
         font-size: 0.8em;
-    }
-
-    .detail-item ul{
-        font-size: 0.6em;
+        text-align: justify;
     }
 
     .detail-container{
         display: flex;
-        flex-direction: row-reverse;
+        flex-direction: column;
         justify-content: left;
-        gap: 2em;
+        gap: 1em;
+        justify-content: center;
+    }
+
+    .detail-item h3{
+        font-size: 1em;
+        margin-bottom: 0.5em;
     }
 
     .detail-item h3::after{
         width: 1em;
         height: 1px;
+    }
+
+    .detail-item ul{
+        font-size: 0.6em;
     }
 }
 
@@ -254,7 +261,12 @@ body{
     }
 
     .about-text p{
-        font-size: 1em;
+        font-size: 0.5em;
+    }
+
+    .about-image img{
+        height: 30vh;
+        width: auto;
     }
 
     .about-text h3{
@@ -303,7 +315,7 @@ body{
     justify-content: center;
 }
 
-.project-board1, .project-board2, .project-board3{
+.project-board {
     width: 30%;
     margin: 0.5em;
     padding: 0.5em;
@@ -314,21 +326,52 @@ body{
 }
 
 @media (max-width: 420px){
-    .boards{
-        flex-direction: column;
-        align-items: center;
+    .project{
+        text-align: center;
+        padding: 2em;
     }
 
-    .project-board1, .project-board2, .project-board3{
-        width: 50%
+    .boards {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        scroll-behavior: smooth;
+        flex-wrap: nowrap;
+        width: 100%;
     }
 
-    .boards h3{
-        font-size: 0.8em;
+    .project-board {
+        flex: 0 0 100%;
+        scroll-snap-align: center;
+        box-sizing: border-box;
+        padding: 1em;
+        border-radius: 10px;
+        background-color: #9a9a9a;
     }
 
-    .boards p{
-        font-size: 0.5em;
+    .project-board img{
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .dots {
+        margin-top: 1rem;
+    }
+
+    .dots a {
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        background: #353535;
+        border-radius: 50%;
+        margin: 0 5px;
+        text-decoration: none;
+    }
+
+    .dots a:hover {
+        background: #b1b1b1;
     }
 }
 
